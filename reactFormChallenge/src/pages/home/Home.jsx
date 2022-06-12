@@ -1,10 +1,8 @@
 
-import './styles.css'
-
 function Home() {
 
   return (
-    <div>
+    <div class="page1">
       <section class="section-page1">
     <h1 class="h1-page1"><img class="displayed" src="src/img/Data1.png"/></h1>
     <h1 class="h1-page1">Intern Sign Up</h1>
