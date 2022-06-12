@@ -151,6 +151,12 @@
     border-radius: 10px;
 	min-width: 60px;
 	min-height: 35px;
+    cursor: pointer;
+	transition: filter 0.2s;
+}
+
+#input-button:hover{
+    filter: brightness(0.9);
 }
 
 /**//**//**//**//**//**//**//**/

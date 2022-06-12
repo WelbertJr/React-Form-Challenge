@@ -11,6 +11,7 @@ body{
 	height: 100vh;
 	min-width:100vw;
 	background: #E5E5E5;
+	-webkit-font-smoothing: antialiased;
 }
 
 
