@@ -1,0 +1,151 @@
+.section-page2{
+	background: #FFFFFF;	
+	border-radius: 20px;
+	width: 500px;
+	height: 600px;
+	justify-content: center;
+	display: none;
+}
+.displayed2{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+    min-width: 170px;
+	height: 16vh;
+	margin-top: 20%;
+}
+
+.h1-page2{
+	font-family: "Inter";
+    font-style: normal;
+    font-weight: 200;
+    font-size: 1.8em;
+    line-height: 1.2vh;
+    color: #111111;
+    text-align: center;
+    height: 20%;
+	margin-top: 8%;
+}
+
+.group-sucess{
+	display:flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	height: 15vh;
+	margin-bottom: 15%;
+}
+#input-button2{
+    min-width: 50%;
+    min-height: 130%;
+	display: block;
+    align-items: center;
+	justify-content: center;
+	font-family: "Nunito";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.7em;
+    border-radius: 10px;
+	border: none;
+	background-color: #0DBDBD;
+	color: #FFFFFF;
+}
+
+/**//**//**//**//**//**//**//**/
+@media (max-width: 768px){
+    .section-page1{
+	width: 100vw;
+	height: 100vh;
+	}
+
+    .line2{
+    display: grid;
+	grid-template-areas: 
+	"group-email group-email"
+	"group-password group-password"
+    "group-phone group-birthday";
+	margin-top: 1vh;
+	row-gap: 4vh;
+    grid-template-columns: 1fr 1fr; 
+	}
+
+	.group-email{
+	grid-area: group-email;
+	margin-top: 3vh;
+	}
+
+	.group-password{
+		grid-area: group-password;
+
+	}
+    
+	.input-date {
+		background: #FFFFFF;
+		border: 2px solid #AAAAAA;
+		border-radius: 4px;
+		height: 5.19vh;
+		left: 238px;
+		top: 533px;
+		padding-left: 2.5%;
+	}
+
+	.group-birthday{
+		grid-area: group-birthday;
+		width: 95%;
+	}
+
+	.line4{
+	display: block;
+	margin-top: 5vh;  	
+	}
+     
+    .group-phone{
+	grid-area: group-phone;
+	width: 95%;
+	justify-self: start;
+	}
+    
+	#input-button{
+	margin-top: 5vh;
+	height: 7vh;
+	font-size: 1em;
+	}
+        /*page2*/
+	.section-page2{
+    width: 100vw;
+	height: 100vh;
+	}	
+
+	.displayed2{
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		min-width: 217px;
+		height: 16vh;
+		margin-top: 30%;
+	}
+	
+	.h1-page2{
+	margin-top: 30%;
+	height: 10%;
+	font-size: 2.4em;
+	}
+	
+	.group-sucess{
+	width:100vw;
+	height: 30%;
+    display:flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 5%;
+	}
+    
+	#input-button2{
+	min-width: 10%;
+	min-height: 10%;
+	width: 85%;	
+	height: 40%;
+	margin-bottom: 15%;
+	}
+}
+

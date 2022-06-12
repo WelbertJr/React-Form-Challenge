@@ -1,3 +1,5 @@
+import './styles.css'
+
 function Sucess() {
   
     return (
