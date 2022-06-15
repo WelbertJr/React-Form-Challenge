@@ -1,7 +1,7 @@
 
 import styled from 'styled-components';
 
-const Form = styled.div`
+const Card = styled.div`
     background: #FFFFFF;	
 	border-radius: 20px;
 	width: 500px;
@@ -12,4 +12,4 @@ const Form = styled.div`
 	padding-top: 3%;
 `
 
-export default Form
+export default Card
