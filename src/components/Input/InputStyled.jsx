@@ -14,6 +14,7 @@ export const ContainerInput = styled.div`
 	display: flex;
 	flex-direction: column;	
 	height: 70px;
+	width:100%;
 `
 export const Label = styled.label`
 	font-family: 'Nunito';

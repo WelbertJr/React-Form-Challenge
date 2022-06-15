@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const Form = styled.form`
+export const Form = styled.form`
     font-family: 'Nunito';
     font-style: normal;
     align-items: center;
@@ -11,5 +11,12 @@ const Form = styled.form`
 	width: 85%;
 	`
 
-export default Form
-
+export const DivLine2 = styled.div`
+    display:grid;
+    grid-template-columns: 3fr 1fr;
+	margin-top: 5vh;
+	row-gap: 4vh;
+`
+export const LoginGroup = styled.div`
+    width:90%
+`
