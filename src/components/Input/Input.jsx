@@ -1,8 +1,13 @@
 import React from "react"
-import InputStyled from "./InputStyled"
-const Input = ({type, id, placeholder})=>{
+import {ContainerInput, InputStyled, Label, ErrorMessage} from "./InputStyled"
+
+const Input = ({type, id, placeholder, label, errorMessage})=>{
     return(
-       <input type={type} id={id} placeholder={placeholder}/>
+       <ContainerInput>
+        <Label htmlFor={id}>{label}</Label>
+        <InputStyled type={type} id={id} placeholder={placeholder}/>
+        <ErrorMessage id={errorMessage}>{id} Invalid</ErrorMessage> 
+       </ContainerInput>
     )
 }
 
