@@ -3,7 +3,7 @@ import Displayed from "../../components/Displayed/Displayed"
 import Title from "../../components/Title/Title"
 import Input from "../../components/Input/Input"
 import {Form, DivLine2, LoginGroup} from "./Home.styled"
-
+import Checkbox from "../../components/Checkbox/Checkbox"
 
 function Home() {
 
@@ -30,7 +30,9 @@ function Home() {
           
           <Input type="date" id="Birthday" placeholder="dd/mm/yyyy" label="Birthday *"/>
           </DivLine2>
-      
+       
+      <Checkbox/>
+
       </Form>
 
     </Card>
