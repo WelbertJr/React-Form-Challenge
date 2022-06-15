@@ -20,3 +20,8 @@ export const DivLine2 = styled.div`
 export const LoginGroup = styled.div`
     width:90%
 `
+export const DivLine3 = styled.div`
+    display: flex;
+	justify-content: space-between;
+	margin-top: 8vh;
+`

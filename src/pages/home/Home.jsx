@@ -2,8 +2,9 @@ import Card from "../../components/Card/Card"
 import Displayed from "../../components/Displayed/Displayed"
 import Title from "../../components/Title/Title"
 import Input from "../../components/Input/Input"
-import {Form, DivLine2, LoginGroup} from "./Home.styled"
+import {Form, DivLine2, LoginGroup, DivLine3} from "./Home.styled"
 import Checkbox from "../../components/Checkbox/Checkbox"
+import Button from "../../components/Button/Button"
 
 function Home() {
 
@@ -25,14 +26,15 @@ function Home() {
           <Input type="tel" id="Phone" placeholder="(83) 00000-0000" label="Phone"/>
             
             <LoginGroup>
-          <Input type="password" id="Password" placeholder="Enter your password" label="Password *"/>
-            </LoginGroup>   
-          
+          <Input type="password" id="Password" placeholder="Enter your password" label="Password *"/> 
+            </LoginGroup> 
+
           <Input type="date" id="Birthday" placeholder="dd/mm/yyyy" label="Birthday *"/>
           </DivLine2>
-       
-      <Checkbox/>
-
+          <DivLine3>
+            <Checkbox/>
+            <Button/>
+          </DivLine3>
       </Form>
 
     </Card>
