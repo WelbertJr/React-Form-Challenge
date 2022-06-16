@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const GroupCheckbox = styled.div`
     input{
-        display:none;
+    display:none;
     }
     input + label:before {
 	content: '';

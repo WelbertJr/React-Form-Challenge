@@ -10,6 +10,11 @@ const Card = styled.div`
 	flex-direction: column;
 	display: flex;
 	padding-top: 3%;
+
+	@media (max-width: 768px){
+	width: 100vw;
+	height: 100vh;
+}
 `
 
 export default Card

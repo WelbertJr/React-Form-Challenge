@@ -9,19 +9,72 @@ export const Form = styled.form`
     background: #FFFFFF;
     margin: 7% 7% 0 7%;
 	width: 85%;
+
+    @media (max-width: 768px){
+    margin: 7% 7% 0 7%;
+	width: 80%;
+    }
 	`
 
 export const DivLine2 = styled.div`
     display:grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 4fr 1fr;
 	margin-top: 5vh;
 	row-gap: 4vh;
+    justify-items: end;
+
+    @media (max-width: 768px){
+    display: grid;
+	grid-template-areas: 
+	"group-email group-email"
+	"group-password group-password"
+    "group-phone group-birthday";
+	margin-top: 1vh;
+	row-gap: 4vh;
+    grid-template-columns: 1fr 1fr; 
+    }
 `
-export const LoginGroup = styled.div`
-    width:90%
+export const DivEmail = styled.div`
+    width:100%;
+    @media (max-width: 768px){
+    grid-area: group-email;
+	margin-top: 3vh;
+    }
+`
+export const DivPhone = styled.div`
+    width: 85%;
+    @media (max-width: 768px){
+    grid-area: group-phone;
+    justify-self: start;
+    width: 97%;
+    }
+`
+export const DivPassword = styled.div`
+    width: 100%;
+    @media (max-width: 768px){
+    grid-area: group-password;
+    }
+`
+export const DivBirthday = styled.div`
+    width: 85%;
+    @media (max-width: 768px){
+    grid-area: group-birthday;
+	width: 97%;
+    }
 `
 export const DivLine3 = styled.div`
     display: flex;
 	justify-content: space-between;
 	margin-top: 8vh;
+    
+    @media (max-width: 768px){
+    display: block;
+    margin-top: 3vh;
+
+    button{
+    margin-top: 3vh;
+	height: 6vh;
+	font-size: 1em;
+    }
+    }
 `
