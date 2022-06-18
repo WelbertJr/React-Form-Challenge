@@ -1,19 +1,19 @@
-import Card from "../../components/card/Card"
-import Input from "../../components/input/Input"
-import {Form, Displayed, Title, DivLine2, DivEmail, DivPassword, DivPhone, DivBirthday, DivLine3} from "./Home.styled"
-import Checkbox from "../../components/checkbox/Checkbox"
-import Button from "../../components/button/Button"
-import {useNavigate} from "react-router-dom"
+import Card from "../../components/card/Card";
+import Input from "../../components/input/Input";
+import {Form, Displayed, Title, DivLine2, DivEmail, DivPassword, DivPhone, DivBirthday, DivLine3} from "./Home.styled";
+import Checkbox from "../../components/checkbox/Checkbox";
+import Button from "../../components/button/Button";
+import {useNavigate} from "react-router-dom";
 
 function Home() {
-
+let navigate = useNavigate();
   return (
     <Card>
     
       <Displayed src={"/src/img/Data1.png"}/>
       <Title>Intern Sign Up</Title>  
       
-      <Form>
+      <Form onSubmit={()=>navigate("/sucess")}>
           
           <Input type="text" id="Fullname" placeholder="Name" label="Full Name *"/>
           
@@ -38,7 +38,7 @@ function Home() {
           
           <DivLine3>
             <Checkbox/>
-            <Button name="Register"  navigate = {useNavigate()}/>
+            <Button name="Register" type="submit"/>
           </DivLine3>
       </Form>
 

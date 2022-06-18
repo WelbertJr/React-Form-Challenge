@@ -7,15 +7,14 @@ const Button = (props)=>{
   if (props.name=="Register")
   return(   
         <GroupButton>
-        <button  type="submit" onClick={()=>{props.navigate("/sucess");}}>{props.name}</button>
+        <button type={props.type}>{props.name}</button>
       </GroupButton>
       )
       else (props.name=="Go Back!")
       return(
       <GroupButton2>
-      <button   type="submit"  onClick={()=>{props.navigate("/");}}>{props.name}</button>
+      <button onClick={props.onClick}>{props.name}</button>
       </GroupButton2>
-
     )
 }
 
