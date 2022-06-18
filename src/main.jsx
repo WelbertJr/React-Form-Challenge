@@ -8,7 +8,7 @@ import Sucess from './pages/sucess/Sucess'
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <Home/>
-    
+    <Sucess/>
   </React.StrictMode>
 )
 
