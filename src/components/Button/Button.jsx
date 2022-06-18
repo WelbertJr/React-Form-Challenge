@@ -1,6 +1,7 @@
 import React from "react"
 import { GroupButton, GroupButton2 } from "./Button.styled"
 
+
 const Button = (props)=>{
   if (props.name=="Register")
   return(
