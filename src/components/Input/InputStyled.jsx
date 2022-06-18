@@ -8,7 +8,7 @@ export const InputStyled = styled.input`
 	left: 238px;
     top: 533px;
 	padding-left: 2.5%;	
-`
+`;
 
 export const ContainerInput = styled.div`
 	display: flex;
@@ -19,14 +19,14 @@ export const ContainerInput = styled.div`
 	@media (max-width: 768px){
 	height: 60px;
 	}
-`
+`;
 export const Label = styled.label`
 	font-family: 'Nunito';
 	font-style: normal;
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 16px;
-	`
+`;
 
 	export const ErrorMessage = styled.p`
 	font-family: 'Nunito';
@@ -35,6 +35,6 @@ export const Label = styled.label`
 	font-size: 14px;
 	line-height: 16px;
 	color: #FF4B4B;
-	display:none;
+	display: none;
 	margin-top: 1%;
-`
+`;

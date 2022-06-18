@@ -1,17 +1,15 @@
+import Card from "../../components/card/Card"
+import {Displayed2, Title2} from "./Sucess.styled"
+import Button from "../../components/button/Button"
 
 function Sucess() {
   
     return (
-        <div>
-        <section class="section-page2">
-        <h1 class="h1-page2"><img class="displayed2" src="img/Data1.png"/></h1>
-          <h1 class="h1-page2">Sucess!</h1>
-          
-          <div class="group-sucess">
-            <button id="input-button2" type="submit" value="Go Back!">Go Back!</button>
-          </div>
-      </section>
-      </div>
+      <Card>
+      <Displayed2  src={"/src/img/Data1.png"}/>
+      <Title2>Succes!</Title2> 
+      <Button name="Go Back!"/>
+       </Card>
     )
   }
   

@@ -1,12 +1,20 @@
 import React from "react"
-import { GroupButton } from "./Button.styled"
+import { GroupButton, GroupButton2 } from "./Button.styled"
 
-const Button = ()=>{
-    return(
+const Button = (props)=>{
+  if (props.name=="Register")
+  return(
         <GroupButton>
-        <button id="input-button" type="submit" value="Register">Register</button>
+        <button  type="submit">{props.name}</button>
       </GroupButton>
+      )
+      else (props.name=="Go Back!")
+      return(
+      <GroupButton2>
+      <button   type="submit">{props.name}</button>
+      </GroupButton2>
+
     )
 }
 
-export default Button
+export default Button 

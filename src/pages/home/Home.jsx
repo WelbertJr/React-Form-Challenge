@@ -1,10 +1,8 @@
-import Card from "../../components/Card/Card"
-import Displayed from "../../components/Displayed/Displayed"
-import Title from "../../components/Title/Title"
-import Input from "../../components/Input/Input"
-import {Form, DivLine2, DivEmail, DivPassword, DivPhone, DivBirthday, DivLine3} from "./Home.styled"
-import Checkbox from "../../components/Checkbox/Checkbox"
-import Button from "../../components/Button/Button"
+import Card from "../../components/card/Card"
+import Input from "../../components/input/Input"
+import {Form, Displayed, Title, DivLine2, DivEmail, DivPassword, DivPhone, DivBirthday, DivLine3} from "./Home.styled"
+import Checkbox from "../../components/checkbox/Checkbox"
+import Button from "../../components/button/Button"
 
 function Home() {
 
@@ -39,7 +37,7 @@ function Home() {
           
           <DivLine3>
             <Checkbox/>
-            <Button/>
+            <Button name="Register"/>
           </DivLine3>
       </Form>
 

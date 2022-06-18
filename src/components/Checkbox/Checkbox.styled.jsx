@@ -38,4 +38,4 @@ export const GroupCheckbox = styled.div`
 	font-size: 2.2vh;
 	color: #111111;
    }
-`
+`;
