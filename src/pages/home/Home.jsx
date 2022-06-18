@@ -3,6 +3,7 @@ import Input from "../../components/input/Input"
 import {Form, Displayed, Title, DivLine2, DivEmail, DivPassword, DivPhone, DivBirthday, DivLine3} from "./Home.styled"
 import Checkbox from "../../components/checkbox/Checkbox"
 import Button from "../../components/button/Button"
+import {useNavigate} from "react-router-dom"
 
 function Home() {
 
@@ -37,7 +38,7 @@ function Home() {
           
           <DivLine3>
             <Checkbox/>
-            <Button name="Register"/>
+            <Button name="Register"  navigate = {useNavigate()}/>
           </DivLine3>
       </Form>
 
