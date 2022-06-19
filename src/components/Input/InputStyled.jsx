@@ -28,13 +28,13 @@ export const Label = styled.label`
 	line-height: 16px;
 `;
 
-	export const ErrorMessage = styled.p`
+	export const ErrorMessage = styled.span`
 	font-family: 'Nunito';
 	font-style: normal;
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 16px;
 	color: #FF4B4B;
-	display: none;
+	display:none;
 	margin-top: 1%;
 `;

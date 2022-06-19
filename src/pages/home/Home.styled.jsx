@@ -35,6 +35,16 @@ export const Title = styled.h1`
     margin-top: 4vh;
 `;
 
+export const InputInvalid = styled.span`
+font-family: 'Nunito';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+color: #FF4B4B;
+margin-top: 1%;
+`;
+
 export const DivLine2 = styled.div`
     display:grid;
     grid-template-columns: 4fr 1fr;
