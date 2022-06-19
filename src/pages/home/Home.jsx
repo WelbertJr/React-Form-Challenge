@@ -3,17 +3,25 @@ import Input from "../../components/input/Input";
 import {Form, Displayed, Title, DivLine2, DivEmail, DivPassword, DivPhone, DivBirthday, DivLine3} from "./Home.styled";
 import Checkbox from "../../components/checkbox/Checkbox";
 import Button from "../../components/button/Button";
+import {useForm} from "react-hook-form";
 import {useNavigate} from "react-router-dom";
 
+
 function Home() {
+const {register, handleSubmit, watch, formState : {errors}} = useForm();
 let navigate = useNavigate();
-  return (
+
+function validation (userData){
+  console.log(userData)
+  navigate('/sucess');
+}
+return (
     <Card>
     
       <Displayed src={"/src/img/Data1.png"}/>
       <Title>Intern Sign Up</Title>  
       
-      <Form onSubmit={()=>navigate("/sucess")}>
+      <Form onSubmit={handleSubmit(validation)}>
           
           <Input type="text" id="Fullname" placeholder="Name" label="Full Name *"/>
           
