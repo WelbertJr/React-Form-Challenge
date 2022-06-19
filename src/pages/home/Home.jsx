@@ -25,11 +25,11 @@ return (
       <Form onSubmit={handleSubmit(validation)}>
           
 
-        <ContainerInput>
+            <ContainerInput>
       <Label htmlFor="Fullname">Full Name *</Label>
       <InputStyled type ="text"  id="Fullname" placeholder="Name" {...register("name", {required: true})}/>
       {errors.name && <InputInvalid>Fullname Invalid</InputInvalid>} 
-        </ContainerInput>
+            </ContainerInput>
 
       <DivLine2>
             
