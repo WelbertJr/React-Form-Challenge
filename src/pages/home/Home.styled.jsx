@@ -43,6 +43,10 @@ font-size: 14px;
 line-height: 16px;
 color: #FF4B4B;
 margin-top: 1%;
+
+@media (max-width: 768px){
+display:none;
+}
 `;
 
 export const DivLine2 = styled.div`

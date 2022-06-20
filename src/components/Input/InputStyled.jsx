@@ -37,4 +37,8 @@ export const Label = styled.label`
 	color: #FF4B4B;
 	margin-top: 1%;
 	display: block;
+
+	@media (max-width: 768px){
+	display: none;
+}
 `;
