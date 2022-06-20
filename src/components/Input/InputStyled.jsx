@@ -35,6 +35,10 @@ export const Label = styled.label`
 	font-size: 14px;
 	line-height: 16px;
 	color: #FF4B4B;
-	display: none;
 	margin-top: 1%;
+	display: block;
+
+	@media (max-width: 768px){
+	display: none;
+}
 `;
