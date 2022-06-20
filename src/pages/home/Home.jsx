@@ -14,7 +14,6 @@ const schema = yup.object({
   phone: yup.string().matches(/\([1-9]{2}\) 9[1-9]\d{3}-\d{4}/).required(),
   password: yup.string().matches(/^[0-9]{6,9}$/).required(),
   birthday: yup.date().min(`1899-01-01`).required(),
-  checkbox: yup.boolean().isTrue('You must agree with terms'),
 }).required();
 
 
@@ -81,7 +80,7 @@ return (
       </DivLine2>
           
       <DivLine3>
-            <Checkbox/>
+            <Checkbox label="I accept the terms and privacy"/>  
             <Button name="Register" type="submit"/>
       </DivLine3>
 
@@ -91,4 +90,4 @@ return (
   )
 }
 
-export default Home
+export default Home                      
