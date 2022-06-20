@@ -5,17 +5,30 @@ import Button from "../../components/button/Button";
 import {useForm} from "react-hook-form";
 import {useNavigate} from "react-router-dom";
 import {InputStyled, Label, ContainerInput } from "../../components/input/InputStyled";
+import { yupResolver } from '@hookform/resolvers/yup';
+import * as yup from "yup";
+
+const schema = yup.object({
+  name: yup.string().matches(/^[\w]+(?:\s[\w]+)+$/).required(),
+  email: yup.string().email().matches(/^[a-z0-9._-]+(?:\.[a-z0-9._-]+)*@(?:[a-z0-9](?:[a-z-]*[a-z])?.)+[a-z](?:[a-z]*[a-z]){1,}?$/).required(),
+  phone: yup.string().matches(/\([1-9]{2}\) 9[1-9]\d{3}-\d{4}/).required(),
+  password: yup.string().matches(/^[0-9]{6,9}$/).required(),
+  birthday: yup.date().min(`1899-01-01`).required(),
+  checkbox: yup.boolean().isTrue('You must agree with terms'),
+}).required();
 
 
 function Home() {
-const {register, handleSubmit, watch, formState : {errors}} = useForm();
+const {register, handleSubmit, formState : {errors}} = useForm({
+  resolver: yupResolver(schema)
+});
 let navigate = useNavigate();
 
 function validation (userData){
   console.log(userData);
   navigate('/sucess');
 }
-
+console.log(errors);
 return (
     <Card>
     
@@ -26,9 +39,9 @@ return (
           
 
             <ContainerInput>
-      <Label htmlFor="Fullname">Full Name *</Label>
-      <InputStyled type ="text"  id="Fullname" placeholder="Name" {...register("name", {required: true})}/>
-      {errors.name && <InputInvalid>Fullname Invalid</InputInvalid>} 
+            <Label htmlFor="Fullname">Full Name *</Label>
+            <InputStyled type ="text"  id="Fullname" placeholder="Name" {...register("name", {required: true})}/>
+            {errors.name && <InputInvalid>Fullname Invalid</InputInvalid>}
             </ContainerInput>
 
       <DivLine2>
@@ -36,7 +49,7 @@ return (
             <DivEmail> 
           <ContainerInput>
           <Label htmlFor="Email">Email *</Label>
-          <InputStyled type="email" id="Email" placeholder="foo@bar.com" {...register("email", {required: true})}/>
+          <InputStyled type="text" id="Email" placeholder="foo@bar.com" {...register("email", {required: true})}/>
           {errors.email && <InputInvalid>Email Invalid</InputInvalid>} 
           </ContainerInput>
             </DivEmail>   
