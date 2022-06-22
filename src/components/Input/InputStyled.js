@@ -15,10 +15,6 @@ export const ContainerInput = styled.div`
 	flex-direction: column;	
 	height: 70px;
 	width:100%;
-
-	@media (max-width: 768px){
-	height: 60px;
-	}
 `;
 export const Label = styled.label`
 	font-family: 'Nunito';

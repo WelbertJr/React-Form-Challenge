@@ -1,5 +1,5 @@
-import React from "react"
-import {ContainerInput, InputStyled, Label, ErrorMessage} from "./InputStyled"
+import React from "react";
+import {ContainerInput, InputStyled, Label, ErrorMessage} from "./InputStyled";
 
 const Input = ({type, id, placeholder, label, errorMessage})=>{
     return(
@@ -9,6 +9,6 @@ const Input = ({type, id, placeholder, label, errorMessage})=>{
         <ErrorMessage name={errorMessage}>{id} Invalid</ErrorMessage> 
        </ContainerInput>
     )
-}
+};
 
 export default Input

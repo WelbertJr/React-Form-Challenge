@@ -11,7 +11,7 @@ export const Form = styled.form`
 	width: 85%;
 
     @media (max-width: 768px){
-    margin: 7% 7% 0 7%;
+    margin: 4% 7% 0 7%;
 	width: 80%;
     }
 `;
@@ -45,7 +45,8 @@ color: #FF4B4B;
 margin-top: 1%;
 
 @media (max-width: 768px){
-display:none;
+font-size:14px;
+margin-top: 0;
 }
 `;
 

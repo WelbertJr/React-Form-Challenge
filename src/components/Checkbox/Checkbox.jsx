@@ -3,7 +3,8 @@ import { GroupCheckbox } from "./Checkbox.styled"
 import { ErrorMessage } from "../Input/InputStyled"
 
 const Checkbox = ()=>{
-    return(
+    
+  return(
     
         <GroupCheckbox>
         <input id="input-checkbox" type="checkbox"/>
